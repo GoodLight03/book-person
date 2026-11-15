@@ -1,0 +1,13 @@
+{
+  "rules": {
+    ".read": true,
+    ".write": true,
+    "users": {
+      "$uid": {
+        "books": {
+          ".indexOn": ["updatedAt"]
+        }
+      }
+    }
+  }
+}

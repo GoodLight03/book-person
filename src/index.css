@@ -1,0 +1,45 @@
+:root,
+[data-theme="dark"] {
+  --bg: #0f0c0a;
+  --header-bg: rgba(0,0,0,0.4);
+  --panel-bg: #1e1814;
+  --text: #e8d9c0;
+  --heading: #f5e6c8;
+  --muted: #c9a66b;
+  --border: rgba(201, 166, 107, 0.2);
+  --input-bg: #0f0c0a;
+  --card-bg: #1a1410;
+}
+
+[data-theme="light"] {
+  --bg: #f5f0e6;
+  --header-bg: rgba(255,255,255,0.85);
+  --panel-bg: #fffef9;
+  --text: #3d2914;
+  --heading: #2a1a0a;
+  --muted: #8a6a3d;
+  --border: rgba(160, 130, 80, 0.3);
+  --input-bg: #ffffff;
+  --card-bg: #ffffff;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+html, body, #root {
+  width: 100%;
+  min-height: 100vh;
+}
+
+body {
+  font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  transition: background 0.3s, color 0.3s;
+}
+
+button { font-family: inherit; }
+input, select, textarea { font-family: inherit; }
+
+::-webkit-scrollbar { width: 8px; height: 8px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: rgba(201, 166, 107, 0.35); border-radius: 4px; }
